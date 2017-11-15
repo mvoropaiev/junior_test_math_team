@@ -37,6 +37,7 @@ def find_quadrilateral(polygon):
             p= ' '.join([','.join([str(i) for i in j]) for j in k])
             html=html.replace('$', str_pol)
             html=html.replace('%', p)
+            breack
     
     with open("result.html", "w") as file:
         file.write(html)
