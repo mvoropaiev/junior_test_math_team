@@ -35,7 +35,6 @@ def find_quadrilateral(polygon):
     for k,v in diffs.items():
         if v==minn:
             p= ' '.join([','.join([str(i) for i in j]) for j in k])
-            str_pol=' '.join([','.join([str(j) for j in i]) for i in polygon])
             html=html.replace('$', str_pol)
             html=html.replace('%', p)
     
